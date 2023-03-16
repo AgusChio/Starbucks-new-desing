@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;300;400;500;600;700;800;900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -9,7 +9,7 @@
     font-family: 'Prompt', sans-serif;
 }
 
-body{
+body {
     background-color: var(--bg-color);
 }
 
@@ -21,7 +21,7 @@ body{
     --bg-color: #F2EEEB;
     --text-color: #0a1110;
     --text-color2: #07794F;
-    --text-color3: #065538 ;
+    --text-color3: #065538;
 }
 
 /* ----------- Start Header ----------- */
@@ -42,24 +42,24 @@ header {
     transition: 0.4s;
 }
 
-.paragraph-header{
+.paragraph-header {
     color: var(--text-color2);
     font-weight: 600;
     letter-spacing: 3px;
 }
 
-.paragraph-header-2{
+.paragraph-header-2 {
     color: var(--text-color2);
     font-weight: 600;
 }
 
-.starbucks-title{
+.starbucks-title {
     font-family: 'Merriweather', serif;
     font-size: 2.5rem;
     color: var(--primary-color);
 }
 
-.container-text-header{
+.container-text-header {
     height: 50vh;
 }
 
@@ -89,11 +89,11 @@ li {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 20px 0;
+    padding: 20px 20px;
 }
 
-.container {
-    max-width: 960px;  
+.container-nav {
+    max-width: 960px;
     margin: 0 auto;
     width: 90%;
 }
@@ -112,7 +112,7 @@ li {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding:3rem 0rem 15rem 0rem;
+    padding: 2rem 0rem 14rem 0rem;
     transition: 0.5s all cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
@@ -166,59 +166,180 @@ li {
     right: 0;
     transition: 0.5s all cubic-bezier(0.075, 0.82, 0.165, 1);
 }
+
 /* ---------- End Nabvar ----------*/
 
 /* ---------- End Header ---------- */
 
+
+
 /* ---------- Start Main Home ---------- */
 
-main{
+main {
     height: 200vh;
 }
 
-.image-fluide-main{
+.image-fluide-main {
     height: 30vh;
     margin: -0.5rem 0rem 0rem 0rem;
 }
 
-.title-main-home{
+.title-main-home {
     color: var(--text-color3);
     font-family: 'Rubik', sans-serif;
     font-weight: 500;
 }
 
-.paragraph-main-home{
+.paragraph-main-home {
     color: var(--text-color);
     font-family: 'Rubik', sans-serif;
 }
 
-.paragraph-main-home-2{
+.paragraph-main-home-2 {
     width: 70%;
     position: absolute;
     color: var(--text-color);
     font-family: 'Rubik', sans-serif;
-    margin: 0rem 20rem 0rem 6rem ;
+    margin: 0rem 20rem 0rem 6rem;
 }
 
-.paragraph-main-home-3{
+.paragraph-main-home-3 {
     width: 65%;
     position: absolute;
     color: var(--text-color);
     font-family: 'Rubik', sans-serif;
-    margin: 16rem 0rem 0rem 0.5rem ;
+    margin: 16rem 0rem 0rem 0.5rem;
 }
 
-.image-coffee-spilled{
+.image-coffee-spilled {
     position: absolute;
-    margin: 0rem 20rem 0rem -5rem ;
+    margin: 0rem 20rem 0rem -5rem;
     transform: rotate(12deg);
 }
 
-.image-coffee-capsule{
+.image-coffee-capsule {
     width: 14rem;
     height: 10rem;
     position: absolute;
-    margin: 17rem 20rem 0rem 14.5rem ;
+    margin: 17rem 20rem 0rem 14.5rem;
     transform: rotate(55deg);
 }
 
+/*  ---------- End Main Home  ----------  */
+
+
+/*  ---------- Start Main Menu  ----------  */
+
+.container-menu-coffee {
+    background-color: #205541;
+    background-image: url("data:image/svg+xml,%3Csvg width='42' height='44' viewBox='0 0 42 44' xmlns='http://www.w3.org/2000/svg'%3E%3Cg id='Page-1' fill='none' fill-rule='evenodd'%3E%3Cg id='brick-wall' fill='%23ffffff' fill-opacity='0.4'%3E%3Cpath d='M0 0h42v44H0V0zm1 1h40v20H1V1zM0 23h20v20H0V23zm22 0h20v20H22V23z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    height: fit-content;
+    width: 100%;
+    margin-top: 38rem;
+}
+
+.title-main-menu{
+    color: white;
+    font-family: 'Merriweather', serif;
+    font-weight: 800;
+    letter-spacing: 4px;
+    text-shadow: #223835ae 3px 3px 3px;
+
+}
+
+/* --------- Start Card Menu ---------- */
+.main-menu {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 24px;
+    font-weight: 400;
+    text-align: center;
+}
+
+img {
+    height: auto;
+    max-width: 100%;
+    vertical-align: middle;
+}
+
+.btn {
+    color: var(--text-color);
+    padding: 0.8rem;
+    text-transform: uppercase;
+    border-radius: 10px;
+    font-weight: 900;
+    display: block;
+    width: 100%;
+    cursor: pointer;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    background: transparent;
+}
+
+.btn:hover {
+    color: var(--text-color);
+    background-color: rgba(255, 255, 255, 0.12);
+    transition: 300ms;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.cards_item {
+    display: flex;
+    padding: 1rem;
+}
+
+@media (min-width: 40rem) {
+    .cards_item {
+        width: 50%;
+    }
+}
+
+@media (min-width: 56rem) {
+    .cards_item {
+        width: 33.3333%;
+    }
+}
+
+.card {
+    background-color: transparent;
+    border-radius: 10px;
+    box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.451);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.card_content {
+    height: fit-content;
+    padding: 1rem;
+    background: rgba(186, 185, 185, 0.485);
+}
+
+.card_title {
+    color: var(--text-color);
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin: 0px;
+}
+
+.card_text {
+    color: var(--text-color);
+    line-height: 1.5;
+    font-weight: 500;
+    letter-spacing: 2px;
+    margin-bottom: 3rem;
+    text-shadow: #0a111064 2px 2px 2px;
+}
+
+.text-refresha{
+    margin-bottom: 4.2rem !important;
+}

@@ -9,3 +9,5 @@ window.onscroll = () => {
     navbar.classList.remove('open-menu')
     menu.classList.remove('move')
 }
+
+
