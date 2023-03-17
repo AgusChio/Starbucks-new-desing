@@ -13,22 +13,23 @@
     <link rel="stylesheet" href="assets/styles/index.css">
     <!-- Link Boxicon -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <title>Starbucks | Home</title>
+    <title>Starbucks</title>
 </head>
 
 <body>
-    <header>
+    <a href="#home" class="scroll-top"><i class='bx bx-up-arrow-alt' ></i></a>
+    <header id="home">
         <nav>
-            <div class="nav container">
+            <div class="nav container container-nav">
                 <a class="navbar-brand" href="#">
                     <img src="assets/images/starbucks-logo.png" alt="Bootstrap" width="55" height="55">
                 </a>
                 <ul class="navbar">
-                    <li><a href="#" class="nav-link">Home</a></li>
-                    <li><a href="#" class="nav-link">Menu</a></li>
-                    <li><a href="#" class="nav-link">Coffee</a></li>
-                    <li><a href="#" class="nav-link">Our History</a></li>
-                    <li><a href="#" class="nav-link">Contact</a></li>
+                    <li><a href="#home" class="nav-link">Home</a></li>
+                    <li><a href="#menu" class="nav-link">Menu</a></li>
+                    <li><a href="#coffee" class="nav-link">Coffee</a></li>
+                    <li><a href="#history" class="nav-link">Our History</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
                 </ul>
 
                 <div class="menu-icon">
@@ -50,6 +51,9 @@
     <main class="w-100">
         <img src="assets/images/fluid-main.png" class="image-fluide-main w-100" alt="Fluide green">
         <div class="container-text-information">
+
+            <img src="assets/images/spilled-coffee-bean.png" alt="Spilled Coffee Beans" class="image-spilled-coffee-beans">
+
             <h5 class="title-main-home fs-2 text-center p-3">Enjoy the Taste of Starbucks from the Comfort of Your Home
             </h5>
             <p class="paragraph-main-home w-100 text-center p-2 fs-6">
@@ -76,7 +80,7 @@
         </div>
 
 
-        <div class="container-menu-coffee">
+        <div class="container-menu-coffee" id="menu">
             <div class="main-menu">
                 <h3 class="title-main-menu text-center w-100 p-3">OUR DELICIOUS MENU</h3>
                 <ul class="cards">
@@ -112,7 +116,7 @@
                             <div class="card_image d-flex justify-content-center text-light"><img
                                     src="assets/images/frappuccino-coffee.png"></div>
                             <div class="card_content">
-                                <h2 class="card_title fs-3 text-light">Frappuccino with coffee base</h2>
+                                <h2 class="card_title fs-3 text-light mb-4">Frappuccino with coffee base</h2>
                                 <p class="card_text text-light">Cool off this summer with our delicious iced
                                     coffee-based beverages, available in various flavors and mixed with your choice of
                                     milk.</p>
@@ -138,7 +142,7 @@
                             <div class="card_image d-flex justify-content-center mb-1"><img
                                     src="assets/images/match-green-tea.png"></div>
                             <div class="card_content">
-                                <h2 class="card_title fs-3 text-light">Tea</h2>
+                                <h2 class="card_title fs-3 text-light mb-3">Tea</h2>
                                 <p class="card_text text-light">Choose from our wide selection of Teavana tea blends to
                                     create your perfect infusion. Whether you prefer bold and spicy flavors, sweet and
                                     floral notes, or herbal and calming blends, we have something for everyone.
@@ -152,7 +156,7 @@
                             <div class="card_image d-flex justify-content-center"><img
                                     src="assets/images/strawberry-acai-refresha.png"></div>
                             <div class="card_content">
-                                <h2 class="card_title fs-3 text-light mb-2">Refresha</h2>
+                                <h2 class="card_title fs-3 text-light mb-4">Refresha</h2>
                                 <p class="card_text text-light text-refresha">Sip on something new and exciting with our
                                     refreshing drinks that combine fresh fruits with a unique green coffee base,
                                     delivering a delicious and unexpected flavor experience.</p>
@@ -177,76 +181,192 @@
             </div>
         </div>
 
-        <div class="container-image-title-coffee">
-            <img src="assets/images/fluid-main-coffee.png" class="image-fluid-main-coffee" alt="Fluid Green">
-            <h2 class="title-main-coffee w-100 d-flex justify-content-center p-4 lh-base fs-2 text-end">LEARN MORE ABOUT OUR COFFEE BEANS</h2>
+        <div class="container-main-coffee" id="coffee">
+            <div class="container-image-title-coffee">
+                <img src="assets/images/fluid-main-coffee.png" class="image-fluid-main-coffee" alt="Fluid Green">
+                <h2 class="title-main-coffee w-100 d-flex justify-content-center p-4 lh-base fs-2 text-end">LEARN MORE ABOUT OUR COFFEE BEANS</h2>
+            </div>
+            <div class="timeline w-100">
+                <div class="timeline__event  animated fadeInUp delay-3s timeline__event--type1">
+                    <div class="timeline__icon">
+                        <i class='bx bxs-coffee-bean'></i>
+                    </div>
+                    <div class="timeline__name">
+                        Soft roasting
+                    </div>
+                    <div class="timeline__content">
+                        <div class="timeline__title">
+                            Blonde Espresso Roast WHOLE BEAN
+                        </div>
+                        <div class="timeline__description">
+                            <p>
+                                Based on five decades of coffee art, we set out to create an espresso that offers a
+                                smoother, more balanced flavor in your cup and blends perfectly with the milk. We combined
+                                selected beans from different areas of the Latin American region, and then carefully roasted
+                                them to bring out their sweet and vibrant notes. The result is a deliciously round and
+                                versatile coffee: delicious hot or served over ice.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="timeline__event animated fadeInUp delay-2s timeline__event--type2">
+                    <div class="timeline__icon">
+                        <i class='bx bxs-coffee-bean'></i>
+                    </div>
+                    <div class="timeline__name">
+                        Medium roasting
+                    </div>
+                    <div class="timeline__content">
+                        <div class="timeline__title">
+                            Kenya
+                        </div>
+                        <div class="timeline__description">
+                            <p>
+                                Café Kenya is recognizable thanks to its characteristic citrus and grapefruit flavor, with
+                                occasional hints of lemon and bitter orange. This coffee has a bright acidity. This is why
+                                drinking it is so refreshing. In fact, it's great over ice on a hot summer's day.
+                                Kenya continues to amaze our expert tasters and customers since 1971, with exotic flavors
+                                that no other coffee possesses.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="timeline__event animated fadeInUp delay-1s timeline__event--type3">
+                    <div class="timeline__icon">
+                        <i class='bx bxs-coffee-bean'></i>
+                    </div>
+                    <div class="timeline__name">
+                        Intense roasting
+                    </div>
+                    <div class="timeline__content">
+                        <div class="timeline__title">
+                            Sumatra
+                        </div>
+                        <div class="timeline__description">
+                            <p>
+                                Hailing from the Sumatra area of the Asia Pacific region, it has a dense, creamy body with
+                                virtually no acidity, allowing the flavor and intensity of the coffee to linger on the
+                                palate. Concentrated herbal notes and an earthy aroma are evident, distinctive marks that
+                                this delicious coffee has left in our hearts.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="timeline">
-            <div class="timeline__event  animated fadeInUp delay-3s timeline__event--type1">
-                <div class="timeline__icon">
-                    <i class='bx bxs-coffee-bean'></i>
-                </div>
-                <div class="timeline__name">
-                    Soft roasting
-                </div>
-                <div class="timeline__content">
-                    <div class="timeline__title">
-                        Blonde Espresso Roast WHOLE BEAN
-                    </div>
-                    <div class="timeline__description">
-                        <p> 
-                            Based on five decades of coffee art, we set out to create an espresso that offers a smoother, more balanced flavor in your cup and blends perfectly with the milk. We combined selected beans from different areas of the Latin American region, and then carefully roasted them to bring out their sweet and vibrant notes. The result is a deliciously round and versatile coffee: delicious hot or served over ice.
-                        </p>
-                    </div>
-                </div>
+
+        <img src="assets/images/fluid-coffee.png" class="fluid-coffee" alt="Fluid Coffee">
+        <h2 class="title-main-history fs-1 text-start" id="history">About STARBUCKS</h2>
+        <div class="container-main-history">
+            <h3 class="subtitle-history p-2 w-100 d-flex justify-content-center fs-6">STARBUCKS HISTORY</h3>
+            <h2 class="title-text-history text-center fs-2 w-100">COMMMITTED TO CONNECTION</h2>
+            <p class="paragraph-main-history p-2 fs-4 text-center">It happens millions of times a week - a customer
+                receives a drink from one of our Starbucks baristas - but each interaction is unique. </p>
+            <div class="container-paragraph-image-history d-flex justify-content-center">
+                <img src="assets/images/coffe-heart.png" class="image-coffee-heart w-30" alt="Coffee Heart">
+                <p class="paragraph-main-history-2 fs-6 p-2 w-70 text-end">It's a unique moment in time: one hand
+                    reaches across the counter to reach a cup to another outstretched hand. There we have a connection.
+                </p>
+            </div>
+            <p class="paragraph-main-history-3 fs-6 p-3 text-justify ">At Starbucks we make sure that everything we do
+                respects that connection, from our commitment to the highest quality coffee to the way we engage with
+                our customers and communities to do business responsibly. From the beginning of Starbucks when we only
+                had one store, every place we've been and every place we've opened, we've tried to make it a little
+                better than we found it.</p>
+            <div class="container-imageHistory-title">
+                <img src="assets/images/image-main-history.png" alt="Photograph of the starbucks store" class="image-starbuks-store">
+                <h3 class="title-question fs-2 p-2 pt-4 w-100 text-center">WHEN WAS STARBUCKS FOUNDED?</h3>
+            </div>
+            <div class="container-imageMobyDick-paragraph w-100 d-flex justify-content-center">
+                <p class="paragraph-main-history-4 p-3 fs-6 w-80">When the first Starbucks store opened in 1971, our
+                    company was that one store in Seattle's historic Pike Place Market. From a narrow counter, Sarbucks
+                    offered some of the finest coffee beans in the world. The name, inspired by Moby Dick, evoked the
+                    romance of the high seas and the seafaring tradition of early coffee traders.</p>
+                <img src="assets/images/image-moby-dick.png" class="image-moby-dick-history w-20" alt="Image Moby Dick">
+            </div>
+            <p class="paragraph-main-history-5 p-3 fs-6">In 1981, Howard Schultz (former Chairman and CEO of Starbucks)
+                walked into a Sarbucks store for the first time. From his first cup of Sumatra, Howard was strongly
+                attracted to Starbucks and joined a year later.</p>
+            <div class="container-imageItaly-paragraph d-flex">
+                <img src="assets/images/image-italy.png" class="image-italy-history w-20" alt="Image Italy">
+                <p class="paragraph-main-history-6 p-3 fs-6 w-80 text-end">In 1983, Howard traveled to Italy and was
+                    captivated by Italian coffee shops and the romance of the coffee drinking experience. He had a
+                    vision to bring that tradition of Italian cafés to the United States. He wanted to create a place
+                    for conversation and a sense of community, a third place between work and home. He left the company
+                    for a short period of time to start his own Is Giornale coffee shops and returned in August 1987 to
+                    buy Starbucks with the help of local investors.</p>
+            </div>
+        </div>
+
+        <section id="contact">
+
+            <div class="container-title-paragraph-main-contact">
+                <h1 class="section-header text-center p-4 text-dark">Contact</h1>
+                <p class="paragraph-main-contact w-100 fs-3 fw-bold text-center">Would you like to know more about our seasonal beverages or the brewing process of our coffee? Do you have any suggestions on how we can improve your experience in our stores? We would love to hear from you!</p>
             </div>
 
-            <div class="timeline__event animated fadeInUp delay-2s timeline__event--type2">
-                <div class="timeline__icon">
-                    <i class='bx bxs-coffee-bean'></i>
-                </div>
-                <div class="timeline__name">
-                    Medium roasting
-                </div>
-                <div class="timeline__content">
-                    <div class="timeline__title">
-                        Kenya
+            <div class="contact-wrapper">
+                <form id="contact-form" class="form-horizontal" role="form">
+                    <div class="form-group">
+                        <div class="col-sm-12">
+                            <input type="text" class="form-control" id="name" placeholder="NAME*" name="name" value=""
+                                required>
+                        </div>
                     </div>
-                    <div class="timeline__description">
-                        <p>Café Kenya is recognizable thanks to its characteristic citrus and grapefruit flavor, with occasional hints of lemon and bitter orange. This coffee has a bright acidity. This is why drinking it is so refreshing. In fact, it's great over ice on a hot summer's day.
-                        Kenya continues to amaze our expert tasters and customers since 1971, with exotic flavors that no other coffee possesses.
-                        </p>
-                    </div>
-                </div>
-            </div>
 
-            <div class="timeline__event animated fadeInUp delay-1s timeline__event--type3">
-                <div class="timeline__icon">
-                    <i class='bx bxs-coffee-bean'></i>
-                </div>
-                <div class="timeline__name">
-                    Intense roasting
-                </div>
-                <div class="timeline__content">
-                    <div class="timeline__title">
-                        Sumatra
+                    <div class="form-group">
+                        <div class="col-sm-12">
+                            <input type="email" class="form-control" id="email" placeholder="EMAIL*" name="email"
+                                value="" required>
+                        </div>
                     </div>
-                    <div class="timeline__description">
-                        <p>Hailing from the Sumatra area of the Asia Pacific region, it has a dense, creamy body with virtually no acidity, allowing the flavor and intensity of the coffee to linger on the palate. Concentrated herbal notes and an earthy aroma are evident, distinctive marks that this delicious coffee has left in our hearts.
-                        </p>
-                    </div>
+
+                    <textarea class="form-control" rows="10" placeholder="MESSAGE*" name="message" id="message" required></textarea>
+
+                    <button class="btn btn-primary send-button" id="submit" type="submit" value="SEND">
+                        <div class="alt-send-button">
+                            <i class='bx bxs-send' ></i><span class="send-text">SEND</span>
+                        </div>
+
+                    </button>
+
+                </form>
+
+                <div class="direct-contact-container">
+
+                    <ul class="contact-list">
+
+                        <li class="list-item"><i class='bx bxs-phone-call bx-md'></i><span class="contact-text phone"><a
+                                    href="tel:1-212-555-5555" title="Give me a call">(212) 555-2368</a></span></i>
+                        </li>
+
+                    </ul>
+
+                    <hr>
+                    <ul class="social-media-list">
+                        <li><a href="https://github.com/AgusChio/Starbucks-new-desing" target="_blank" class="contact-icon">
+                                <i class='bx bxl-github bx-md' aria-hidden="true"></i></a>
+                        </li>
+                        <li><a href="https://www.linkedin.com/in/agustina-chiodini/" target="_blank" class="contact-icon">
+                                <i class='bx bxl-linkedin-square bx-md' aria-hidden="true"></i></a>
+                        </li>
+                    </ul>
+                    <hr>
                 </div>
             </div>
-        </div>
+        </section>
     </main>
 
 
 
-    <!-- Script Bootstrap -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
-        crossorigin="anonymous"></script>
-    <script src="assets/javaScript/index.js"></script>
+    <!-- Script EmailJS -->
+    <script type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="javaScript/index.js"></script>
 </body>
 
 </html>
