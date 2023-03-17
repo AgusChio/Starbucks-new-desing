@@ -4,8 +4,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    scroll-behavior: smooth;
-    scroll-padding-top: 2rem;
     font-family: 'Inconsolata', monospace;
 }
 
@@ -164,7 +162,11 @@ li {
 /* ---------- Start Main Home ---------- */
 
 main {
-    height: 200vh;
+    height: fit-content;
+}
+
+.container-text-information{
+    height: fit-content;
 }
 
 .image-fluide-main {
@@ -192,11 +194,9 @@ main {
 }
 
 .paragraph-main-home-3 {
-    width: 65%;
-    position: absolute;
+    width: 70%;
     color: var(--text-color);
     font-family: 'Rubik', sans-serif;
-    margin: 16rem 0rem 0rem 0.5rem;
 }
 
 .image-coffee-spilled {
@@ -208,8 +208,6 @@ main {
 .image-coffee-capsule {
     width: 14rem;
     height: 10rem;
-    position: absolute;
-    margin: 17rem 20rem 0rem 14.5rem;
 }
 
 /*  ---------- End Main Home  ----------  */
@@ -222,7 +220,6 @@ main {
     background-image: url("data:image/svg+xml,%3Csvg width='42' height='44' viewBox='0 0 42 44' xmlns='http://www.w3.org/2000/svg'%3E%3Cg id='Page-1' fill='none' fill-rule='evenodd'%3E%3Cg id='brick-wall' fill='%23ffffff' fill-opacity='0.4'%3E%3Cpath d='M0 0h42v44H0V0zm1 1h40v20H1V1zM0 23h20v20H0V23zm22 0h20v20H22V23z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
     height: fit-content;
     width: 100%;
-    margin-top: 38rem;
 }
 
 .title-main-menu {
@@ -556,7 +553,7 @@ img {
 
 .fluid-coffee {
     position: absolute;
-    margin: -2rem 0rem 0rem 7rem;
+    margin: 1rem 0rem 0rem 7rem;
     transform: rotate(15deg);
     z-index: 3;
 }
@@ -575,6 +572,7 @@ img {
     background-image: url(../images/bg-main-history.png);
     height: fit-content;
     z-index: 1;
+    margin-top: 3rem;
 }
 
 .subtitle-history {
@@ -706,9 +704,11 @@ textarea {
 
 /* Location, Phone, Email Section */
 .contact-list {
+    background-color: #d0d0d076;
     list-style-type: none;
     margin-left: -30px;
     padding-right: 20px;
+    border-radius: 1rem;
 }
 
 .list-item {
@@ -834,37 +834,6 @@ hr {
     transition: 0.3s;
 }
 
-
-/* Begin Media Queries*/
-@media screen and (max-width: 850px) {
-    .contact-wrapper {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .direct-contact-container,
-    .form-horizontal {
-        margin: 0 auto;
-    }
-
-    .direct-contact-container {
-        margin-top: 60px;
-        max-width: 300px;
-    }
-
-    .social-media-list li {
-        height: 60px;
-        width: 60px;
-        line-height: 60px;
-    }
-
-    .social-media-list li:after {
-        width: 60px;
-        height: 60px;
-        line-height: 60px;
-    }
-}
-
 @keyframes fillLeft {
     100% {
         right: 100%;
@@ -925,6 +894,21 @@ hr {
         color: var(--bg-color);
         background: var(--main-color);
         border-radius: 0.2rem;
+    }
+
+    .container-image-paragraph-coffee3{
+        margin-top: 20rem;
+        width: 100%;
+        display: flex;
+        align-items: center;
+    }
+
+    .paragraph-main-home-3{
+        width: 50%;
+    }
+
+    .image-coffee-capsule{
+        width: 40%;
     }
 
     .timeline__event {
@@ -1049,15 +1033,10 @@ hr {
 
 }
 
-/* TABLET */
-@media screen and (min-width:741px) and (max-width:930px){
-
-}
-
 /* DESKTOP */
 @media screen and (min-width: 1024px){
     .nav-link{
-        font-size: 1rem;
+        font-size: 1.5rem;
         font-weight: 600;
     }
 
@@ -1077,8 +1056,7 @@ hr {
     }
 
     .paragraph-main-home-3{
-        width: 50%;
-        margin: 15rem 0rem 0rem 25rem;
+        width: 70%;
     }
 
     .image-spilled-coffee-beans{
@@ -1097,7 +1075,14 @@ hr {
     .image-coffee-capsule{
         width: 15rem;
         height:15rem;
-        margin: 8rem 0rem 0rem 71rem;
+    }
+
+    .container-image-paragraph-coffee3{
+        display: flex;
+        justify-content: center;
+        justify-content: space-between;
+        width: 70%;
+        margin: 20rem 0rem 0rem 20rem;
     }
 
     .container-menu-coffee{
@@ -1189,43 +1174,5 @@ hr {
     .social-media-list li:after {
         width: 70px;
         height: 70px;
-    }
-}
-
-
-
-@media screen and (max-width: 850px) {
-    .contact-wrapper {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .direct-contact-container,
-    .form-horizontal {
-        margin: 0 auto;
-    }
-
-    .direct-contact-container {
-        margin-top: 60px;
-        max-width: 300px;
-    }
-
-    .social-media-list li {
-        height: 60px;
-        width: 60px;
-        line-height: 60px;
-    }
-
-    .social-media-list li:after {
-        width: 60px;
-        height: 60px;
-        line-height: 60px;
-    }
-}
-
-
-@media screen and (max-width: 410px) {
-    .send-button {
-        width: 99%;
     }
 }
