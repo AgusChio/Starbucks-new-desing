@@ -86,9 +86,6 @@ li {
 }
 
 
-/* font-family: 'Rubik', sans-serif; */
-/* font-family: 'Ubuntu', sans-serif;  */
-
 .nav {
     display: flex;
     align-items: center;
@@ -855,7 +852,7 @@ hr {
 /* -------- Start media querry -------- */
 
 /* MOBILE */
-@media screen and (min-width: 375px) and (max-width: 800px){
+@media screen and (min-width: 360px) and (max-width: 900px){
     .menu-icon {
         display: flex;
     }
